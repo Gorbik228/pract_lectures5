@@ -36,7 +36,7 @@ class Person:
          asc = [ord(char) for char in name]
          for i in asc:
               if i not in range(97, 123) and i != 45:
-                   raise ValueError
+                   raise ValueError("Это невозможно")
     
     def __del__(self):
          print('Удалено')
